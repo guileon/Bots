@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="10" height="10" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="environment" tilewidth="32" tileheight="32">
+  <image source="Pictures/environment.png" width="128" height="128"/>
+  <terraintypes>
+   <terrain name="wall" tile="2"/>
+   <terrain name="floor" tile="1"/>
+  </terraintypes>
+ </tileset>
+ <layer name="sample_level" width="10" height="10">
+  <data encoding="csv">
+3,3,3,3,3,3,3,3,3,3,
+3,2,2,2,2,2,2,2,2,3,
+3,2,2,2,2,2,2,2,2,3,
+3,2,2,2,2,2,2,2,2,3,
+3,2,2,2,2,2,2,2,2,3,
+3,2,2,2,2,2,2,2,2,3,
+3,2,2,2,2,2,2,2,2,3,
+3,2,2,2,2,2,2,2,2,3,
+3,2,2,2,2,2,2,2,2,3,
+3,3,3,3,3,3,3,3,3,3
+</data>
+ </layer>
+ <objectgroup name="places" width="10" height="10">
+  <object name="start" type="place" x="32" y="32" width="32" height="32">
+   <properties>
+    <property name="Start" value="True"/>
+   </properties>
+  </object>
+  <object name="finish" type="place" x="256" y="256" width="32" height="32"/>
+ </objectgroup>
+</map>
